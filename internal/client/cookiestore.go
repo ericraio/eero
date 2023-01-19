@@ -58,5 +58,5 @@ func (cs *cookieStore) Save() error {
 		return err
 	}
 
-	return ioutil.WriteFile(cs.cookieFile, data, 0644)
+	return ioutil.WriteFile("/tmp/"+cs.cookieFile, data, 0644)
 }
